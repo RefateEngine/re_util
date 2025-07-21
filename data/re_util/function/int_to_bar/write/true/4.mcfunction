@@ -1,0 +1,2 @@
+data modify storage re_util: out append value "-1-1-1-1"
+scoreboard players remove #re_util_int2bar_value re_util 4

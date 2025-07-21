@@ -1,4 +1,4 @@
-execute store result score #re_gametime re_util run time query gametime
+execute store result score #re_util_gametime re_util run time query gametime
 
 data modify storage re_util: tickCTRL set value {2:false,10:false,20:false,100:false,200:false,tick-0:false,tick-1:false,tick-2:false,tick-3:false,tick-4:false,tick-5:false,tick-6:false,tick-7:false,tick-8:false,tick-9:false}
 
@@ -11,8 +11,7 @@ execute store success storage re_util: tickCTRL.100 byte 1 if score #re_gametime
 execute store success storage re_util: tickCTRL.200 byte 1 if score #re_gametime re_util = #re_util_tc200 re_util run scoreboard players add #re_util_tc200 re_util 200
 
 # 1~10の分散処理
-scoreboard players set #re_10 re_util 10
-scoreboard players operation #re_gametime re_util %= #re_10 re_util
+scoreboard players operation #re_gametime re_util %= #10 Const
 
 execute store success storage re_util: tickCTRL.tick-0 byte 1 if score #re_gametime re_util matches 0
 execute store success storage re_util: tickCTRL.tick-1 byte 1 if score #re_gametime re_util matches 1
@@ -25,5 +24,4 @@ execute store success storage re_util: tickCTRL.tick-7 byte 1 if score #re_gamet
 execute store success storage re_util: tickCTRL.tick-8 byte 1 if score #re_gametime re_util matches 8
 execute store success storage re_util: tickCTRL.tick-9 byte 1 if score #re_gametime re_util matches 9
 
-scoreboard players reset #re_10 re_util
-scoreboard players reset #re_gametime re_util
+scoreboard players reset #re_util_gametime re_util

@@ -1,7 +1,7 @@
 # re_util
 Refate Utility
 
-#tick control
+# tick control
 
 execute if data storage re_util tickCTRL{2:true} run say "2tick毎に実行されるよ"
 対応tick
@@ -12,3 +12,8 @@ execute if data storage re_util tickCTRL{tick-1:true} run say "重い処理1"
 execute if data storage re_util tickCTRL{tick-2:true} run say "重い処理2"
 対応数字
 0~9
+
+# int to bar
+
+カスタムフォントを用いてHPバーなどを作る際に使用する。
+in.valueとin.maxにintを入れて実行すると0と1が100個並んだ配列がoutに返される。interpretをつけて出力し、-をネガティブスペースに設定することできれいなバーが作れる

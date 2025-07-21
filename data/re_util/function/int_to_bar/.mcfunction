@@ -15,8 +15,8 @@ scoreboard players operation #re_util_int2bar_max re_util -= #re_util_int2bar_va
 # これでvalue + max = 100になりました
 
 # outに0と1を入れていきます
-function re_util:int_to_bar/write/true/
-function re_util:int_to_bar/write/false/
+function re_util:int_to_bar/z/write/true/
+function re_util:int_to_bar/z/write/false/
 
 # reset
 scoreboard players reset #re_util_int2bar_value re_util

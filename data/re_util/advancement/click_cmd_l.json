@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "fb": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"re_util_click_cmd\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fb"
+    ]
+  ],
+  "rewards": {
+    "function": "re_util:click_cmd/z/l/"
+  }
+}

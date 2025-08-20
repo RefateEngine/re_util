@@ -1,0 +1,1 @@
+execute summon marker run function re_util:raycast_copy/z/as_marker

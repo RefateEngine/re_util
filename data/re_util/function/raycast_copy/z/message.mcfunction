@@ -1,0 +1,1 @@
+$tellraw @s {"text":"Click to copy: $(x) $(y) $(z)","underlined":true,"click_event":{"action":"copy_to_clipboard","value":"$(x) $(y) $(z)"}}

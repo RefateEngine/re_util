@@ -11,7 +11,7 @@ execute store success storage re_util: tickCTRL.100 byte 1 if score #re_util_gam
 execute store success storage re_util: tickCTRL.200 byte 1 if score #re_util_gametime re_util = #re_util_tc200 re_util run scoreboard players add #re_util_tc200 re_util 200
 
 # 1~10の分散処理
-scoreboard players operation #re_util_gametime re_util %= #10 Const
+scoreboard players operation #re_util_gametime re_util %= #10 const
 
 execute store success storage re_util: tickCTRL.tick-0 byte 1 if score #re_util_gametime re_util matches 0
 execute store success storage re_util: tickCTRL.tick-1 byte 1 if score #re_util_gametime re_util matches 1

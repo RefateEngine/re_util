@@ -33,3 +33,11 @@ interactionは@s
 #re_util_ccmd_r 右クリックで実行した場合 
 #re_util_ccmd_l　左クリックで実行した場合 
 のタグが付きます 
+
+# sin cos tan
+三角関数のsin cos tanを取得する
+inに入力outに出力
+
+# sqrt
+ルートを計算
+inに入力outに出力

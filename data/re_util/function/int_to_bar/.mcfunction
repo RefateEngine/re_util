@@ -5,7 +5,7 @@ execute store result score #re_util_int2bar_max re_util run data get storage re_
 data modify storage re_util: out set value []
 
 # valueはmaxの何%なのか計算する
-scoreboard players operation #re_util_int2bar_value re_util *= #100 Const
+scoreboard players operation #re_util_int2bar_value re_util *= #100 const
 scoreboard players operation #re_util_int2bar_value re_util /= #re_util_int2bar_max re_util
 
 # 100 - value で残りの%が出る

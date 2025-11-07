@@ -8,7 +8,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{Tags:[\"re_util_click_cmd\"]}"
+              "nbt": "{Tags:[\"re_util_ccmd\"]}"
             }
           }
         ]
@@ -21,6 +21,6 @@
     ]
   ],
   "rewards": {
-    "function": "re_util:click_cmd/z/r/"
+    "function": "re_util:ccmd/z/r/"
   }
 }

@@ -1,0 +1,2 @@
+execute store result score #re_util_ccmd_timestamp re_util run data get entity @s interaction.timestamp
+execute if score #re_util_ccmd_timestamp re_util = #re_util_ccmd_gametime re_util run function re_util:ccmd/z/r/uuid

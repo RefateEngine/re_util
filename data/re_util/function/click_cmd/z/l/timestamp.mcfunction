@@ -1,2 +1,0 @@
-execute store result score #re_util_ccmd_timestamp re_util run data get entity @s attack.timestamp
-execute if score #re_util_ccmd_timestamp re_util = #re_util_ccmd_gametime re_util run function re_util:click_cmd/z/l/uuid

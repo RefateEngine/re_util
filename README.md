@@ -21,14 +21,14 @@ execute if data storage re_util tickCTRL{tick-2:true} run say "重い処理2"
 カスタムフォントを用いてHPバーなどを作る際に使用する。 
 in.valueとin.maxにintを入れて実行すると0と1が100個並んだ配列がoutに返される。interpretをつけて出力し、-をネガティブスペースに設定することできれいなバーが作れる 
 
-# click command
+# click command (ccmd)
 
 クリックした際にコマンドを実行するinteractionを召喚できます。 
-inにheight,width,command_r,command_lを指定して、召喚したい場所で実行 
+inにheight,width,command_r,command_l,tagを指定して、召喚したい場所で実行 
 
 実行コマンド内で 
 interactionは@s 
-クリックしたプレイヤーは@a[tag=re_util_click_cmd_player] 
+クリックしたプレイヤーは@a[tag=re_util_ccmd_player] 
 さらにinteraction[@s]には 
 #re_util_ccmd_r 右クリックで実行した場合 
 #re_util_ccmd_l　左クリックで実行した場合 

@@ -41,3 +41,7 @@ inに入力outに出力
 # sqrt
 ルートを計算
 inに入力outに出力
+
+# slice
+整数(int)を一桁ずつのリストに変換
+inに入力outに出力
